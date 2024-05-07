@@ -16,7 +16,7 @@ export default function Player({initialName, symbol}) {
   if (isEditing)
     editablePlayerName = (
       <input type="text" required value={playerName} onChange={handleChange} />
-    );
+    ); //two way binding - changing "value" to THE value
 
   return (
     <li>
